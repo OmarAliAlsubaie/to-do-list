@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+  <title>سوها To-Do List</title>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 300px;
+      font-family: Arial, sans-serif;
+      background-color: #081742;
+      padding: 10px;
+    }
+    h1 {
+      font-size: 20px;
+      margin: 20px 0;
+      color: #384b80;
+    }
+    input[type="text"] {
+      width: 50%;
+      margin-bottom: 10px;
+      padding: 5px;
+      border: none;
+      border-radius: 3px;
+      box-shadow: 0 0 3px rgba(41, 38, 71, 0.2);
+    }
+    button {
+      background-color: #225c7e;
+      color: rgb(132, 186, 207);
+      padding: 5px 10px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #6787ca;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 5px;
+      background-color: #a7ceee;
+      padding: 5px;
+      border-radius: 3px;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      position: relative;
+    }
+    .completed {
+      text-decoration: line-through;
+      background-color: #6691d3;
+    }
+    .delete-button {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: none;
+      border: none;
+      font-size: 12px;
+      color: #701538;
+      cursor: pointer;
+      padding: 2px;
+      margin: 2px;
+    }
+  </style>
+  <script src="popup.js"></script>
+</head>
+<body>
+  <h1>سوها To-Do List</h1>
+  <input type="text" id="todoInput" placeholder="أضف مهمة">
+  <button id="addButton">إضافة</button>
+  <ul id="todoList"></ul>
+</body>
+</html>
